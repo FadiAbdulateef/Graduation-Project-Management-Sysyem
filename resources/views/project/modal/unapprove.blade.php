@@ -1,0 +1,25 @@
+<div class="modal fade" id="unapprove{{$project->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">إلغاء إعتماد المشروع</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="margin-left: -42rem">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a href="{{ route('projects.unapprove',$project->id) }}">
+                    <p class="text-xl-center text-gray-500">
+                        هل انت متأكد من إلغاء إعتماد  {{ $project->title}}؟
+                    </p>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">إغلاق</button>
+                        <button type="submit" class="btn btn-success ">تأكيد</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,4 @@
+#myButton:disabled {
+    opacity: 0.5; /* تغيير الشفافية */
+    cursor: not-allowed; /* تغيير شكل المؤشر */
+}

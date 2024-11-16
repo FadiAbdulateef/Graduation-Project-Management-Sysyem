@@ -1,0 +1,14 @@
+input[type="file"] {
+    display: none;
+}
+
+label {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#file-info {
+    margin-top: 10px;
+}
